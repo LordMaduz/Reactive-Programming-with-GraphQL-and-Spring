@@ -1,4 +1,30 @@
 spring:
   graphql:
+    schema:
+      printer:
+        enabled: true
+    path: /graphql
+    websocket:
+      path=: /graphql
+      connection-init-timeout: 60s # defines the WebSocket connection initialization timeout to 60 sec
     graphiql:
       enabled: true
+
+JWT:
+  password:
+    encoder:
+      secret: mysecret
+      iteration: 33
+      key-length: 256
+
+  secret: ThisIsSecretForJWTHS512SignatureAlgorithmThatMUSTHave64ByteLength
+  expiration: 18600
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+        http: debug
+        graphql: debug
+        netty: debug

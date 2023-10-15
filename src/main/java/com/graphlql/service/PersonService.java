@@ -6,6 +6,8 @@ import com.graphlql.model.Person;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +23,10 @@ public class PersonService {
 
     public Mono<Person> findById(final String id) {
         return Mono.fromCallable(() -> {
+            String contains = String.format("%%%s%%", id);
+            String starts = String.format("%s%%", id);
+            String ends = String.format("%%%s", id);
+
             Optional<Person> optional = personList.stream().filter(p -> p.getId().equals(id)).findAny();
             if (optional.isPresent()) {
                 return optional.get();
