@@ -5,10 +5,6 @@ This repository demonstrates how to upload and download files from Amazon S3 usi
 ./mvnw clean ; ./mvnw clean compile spring-boot:start
 ./mvnw spring-boot:stop
 ```
-To test the functionality head over to the following Swagger endpoint.
-[Swagger URL](http://localhost:8080/webjars/swagger-ui/index.html)
-
-
 
 
 #### Please take a look at the article below for a comprehensive guide on the project setup and concept we used here.
