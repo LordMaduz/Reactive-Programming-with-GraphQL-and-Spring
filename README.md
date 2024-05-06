@@ -1,6 +1,6 @@
 # Reactive Programming with GraphQL and Spring Boot
 This repository demonstrates;
-* How to Error handle in GraphQL with Reactive Spring
+* How to handle Error in GraphQL with Reactive Spring
 * How to handle GraphQL Subscriptions
 
 ```bash
