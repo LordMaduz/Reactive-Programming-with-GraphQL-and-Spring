@@ -1,13 +1,4 @@
 # Reactive Programming with GraphQL and Spring Boot
-This repository demonstrates;
-* How to handle Error in GraphQL with Reactive Spring
-* How to handle GraphQL Subscriptions
-
-```bash
-./mvnw clean ; ./mvnw clean compile spring-boot:start
-./mvnw spring-boot:stop
-```
-
 
 #### Please take a look at the below articles for a detail explanation of the above concepts.
 
