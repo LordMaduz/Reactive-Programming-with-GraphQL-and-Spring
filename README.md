@@ -1,4 +1,4 @@
-# Reactive GraphQL with Spring Boot
+# Reactive GraphQL with Spring Boot WebFlux
 
 > Production-ready GraphQL API with reactive Spring WebFlux, real-time subscriptions over WebSocket, JWT authentication, and comprehensive error handling.
 
